@@ -12,8 +12,7 @@
         <h3>Mathematics Game</h3>
         <span class="result">Solve It</span>
         <h1>
-            <span class="quest">10+10</span>
-            <span> = ?</span>
+            <span class="quest"></span>
         </h1>
         <input type='number' class='ans' placeholder='0' required>
         <input type='submit' class='submit'>
@@ -22,7 +21,7 @@
         <span class='reset'>Reset score</span>
     </form>
 
-    <script>
+    <!-- <script>
         let quiz = document.querySelector(".quiz");
         let result = document.querySelector(".result");
         let quest = document.querySelector(".quest");
@@ -31,14 +30,14 @@
         let next = document.querySelector(".next");
         let score = document.querySelector(".score");
         let reset = document.querySelector(".reset");
-        let prevScore = ~~localStorage.getItem('score');
+        let prevScore = ~~localStorage.getItem('.score');
         score.textContent = `Score : ${prevScore}`;
-
-        function gq() {
-            let op = ['+', '-', '*', '/'];
-            let r1 = ~~(Math.random() * 5) + 5;
-            let r2 = ~~(Math.random() * 5);
-            let rop = ~~(Math.random() * 4);
+/*
+function gq() {
+    let op = ['+', '-', '*', '/'];
+            let r1 = Math.floor(Math.random() * 5) + 5;
+            let r2 = Math.floor(Math.random() * 5);
+            let rop = Math.floor(Math.random() * 4);
             quest.textContent = `${r1} ${op[rop]} ${r2}`;
         }
         gq();
@@ -68,8 +67,11 @@
             localStorage.removeItem('score');
             location.reload();
         })
+*/
         
         
-    </script>
+    </script> -->
+    
+<script src="./script.js"></script>
 </body>
 </html>
